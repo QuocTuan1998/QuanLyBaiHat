@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.quanlybaihat.activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtQuanLy"
+        android:text="Quản lý Album"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#004000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuanLy"
+        android:id="@+id/btnThem"
+        android:text="Thêm Album"
+        android:textSize="18dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnThem"
+        android:id="@+id/btnXem"
+        android:text="Xem danh sách album"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnXem"
+        android:id="@+id/txtText"
+        android:textSize="25dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:id="@+id/btnQuanLy"
+        android:text="Quản lý bài hát"
+        android:textSize="18dp"
+        />
+</RelativeLayout>

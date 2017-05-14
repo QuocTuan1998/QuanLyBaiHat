@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.quoctuan.quanlybaihat.activity.UpdateAlbumActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtThemMoi"
+        android:text="Update Album"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtThemMoi"
+        android:textSize="15dp"
+        android:id="@+id/txtText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:id="@+id/txtMa"
+        android:text="Mã Album : "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtText"
+        android:layout_toRightOf="@id/txtMa"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/editMa"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editMa"
+        android:id="@+id/txtText1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText1"
+        android:id="@+id/txtTen"
+        android:text="Tên Album : "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtText1"
+        android:layout_toRightOf="@id/txtMa"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/editTen"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTen"
+        android:id="@+id/txtText2"
+        android:textSize="5dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText2"
+        android:layout_toLeftOf="@id/editTen"
+        android:id="@+id/btnXoa"
+        android:text="Xóa trắng"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText2"
+        android:layout_toRightOf="@id/txtTen"
+        android:id="@+id/btnUpdate"
+        android:text="Update"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.quanlybaihat.activity.QuanLyAlbumActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAlbum"
+        android:text="Album :          "
+        android:textSize="22dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtAlbum"
+        android:id="@+id/spAlbum">
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlbum"
+        android:id="@+id/txtTenBH"
+        android:text="Tên BH :         "
+        android:textSize="22dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlbum"
+        android:layout_toRightOf="@id/txtTenBH"
+        android:id="@+id/editTenBH"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTenBH"
+        android:id="@+id/txtNgay"
+        android:text="Ngày ra Đĩa :  "
+        android:textSize="22dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTenBH"
+        android:layout_toRightOf="@+id/txtNgay"
+        android:layout_toLeftOf="@+id/btnNgay"
+        android:id="@+id/editNgay"
+        android:inputType="date"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTenBH"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnNgay"
+        android:text="..."
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNgay"
+        android:id="@+id/btnThemBH"
+        android:text="Thêm Bài Hát"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnThemBH"
+        android:id="@+id/lvBaiHat">
+
+    </ListView>
+</RelativeLayout>
